@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary_blue_200: #030c26;
+  --primary_blue_300: #142351;
+  --primary_blue_400: #33457b;
+  --primary_blue_500: #8291bf;
+  --primary_blue_600: #d5dcf2;
+  --secundary_gray_700: #efefef;
+}
+
+* {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding-top: 60px;
+    background-color: var(--secundary_gray_700);
+    font-family: "Montserrat", sans-serif !important;
+  }
+
+  .navbar {
+    position: fixed !important;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-inline: 122px !important;
+    white-space: nowrap;
+  }
+
+  .nav-logo-name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & .logo {
+      position: relative;
+      background-image: url(../imgs/logo_equipe.svg);
+      width: 45px;
+      aspect-ratio: 1/1;
+      background-size: cover;
+    }
+
+    & .name {
+      font-weight: 800;
+      font-size: 1.7rem;
+      margin-top: 12px;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 1.2rem;
+    margin-top: 13px;
+
+    & .link {
+      cursor: pointer;
+    }
+  }
+}
