@@ -20,9 +20,9 @@
         <div class="name">ByteMe</div>
       </div>
       <div class="nav-links">
-        <div class="link">Quem Somos</div>
-        <div class="link">Nosso Projeto</div>
-        <div class="link">Tecnologias</div>
+        <a href="#tela-inicial"><div class="link">Quem Somos</div></a>
+        <a href="#tela-pi"><div class="link">Nosso Projeto</div></a>
+        <a href="#tela-tecnologias"><div class="link">Tecnologias</div></a>
       </div>
       <div class="nav-menu">
         <div class="material-symbols--menu-rounded"></div>
@@ -30,26 +30,38 @@
     </nav>
 
     <div class="wrapper">
-      <div class="tela-inicial">
+      <div class="tela-inicial" id="tela-inicial">
         <div class="shapes">
           <div class="square-1"></div>
           <div class="square-2"></div>
           <div class="square-3"></div>
+          <div class="square-4"></div>
+          <div class="square-5"></div>
         </div>
         <div class="conteudo">
-          <div class="title">Quem Somos?</div>
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-            nostrum suscipit porro debitis fugiat hic minima accusamus?
-            Perferendis quis, consequuntur aperiam, eum id similique fugit
-            laborum quod cumque dolorem velit autem repudiandae! Iste tempora
-            adipisci quidem? Eos delectus nostrum enim similique est quos, quam
-            ea in quidem ratione molestiae illum.
+          <div class="title-text">
+            <div class="title">Quem Somos?</div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+              nostrum suscipit porro debitis fugiat hic minima accusamus?
+              Perferendis quis, consequuntur aperiam, eum id similique fugit
+              laborum quod cumque dolorem velit autem repudiandae! Iste tempora
+              adipisci quidem? Eos delectus nostrum enim similique est quos,
+              quam ea in quidem ratione molestiae illum.
+            </div>
+          </div>
+
+          <div class="logo">
+            <img
+              src="assets/imgs/logo_equipe.svg"
+              alt="Logo da Equipe"
+              class="logo-img"
+            />
           </div>
         </div>
       </div>
 
-      <div class="tela-integrantes">
+      <div class="tela-integrantes" id="tela-integrantes">
         <div class="title">Integrantes</div>
         <div class="cards-wrap">
           <div class="cards">
@@ -87,7 +99,10 @@
               <div class="square-2-4"></div>
             </div>
             <div class="icon-name">
-              <img src="https://loremfaces.net/96/id/1.jpg" class="profile-icon"/>
+              <img
+                src="https://loremfaces.net/96/id/1.jpg"
+                class="profile-icon"
+              />
               <div class="name">Heloisa</div>
             </div>
             <div class="text">
@@ -157,7 +172,7 @@
         </div>
       </div>
 
-      <div class="tela-pi">
+      <div class="tela-pi" id="tela-pi">
         <div class="container-pi">
           <div class="shapes">
             <div class="square-1"></div>
@@ -188,57 +203,82 @@
             <div class="square-26"></div>
             <div class="square-27"></div>
             <div class="square-28"></div>
+            <div class="square-29"></div>
+            <div class="square-30"></div>
+            <div class="square-31"></div>
+            <div class="square-32"></div>
           </div>
 
           <div class="title">Nosso Projeto</div>
-          <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            assumenda non ad, eveniet voluptas esse expedita enim dolor amet in
-            quidem magnam voluptatum debitis molestiae quos minus fuga minima
-            similique libero vero beatae asperiores natus eligendi. Unde quasi,
-            facilis ex velit vel ad libero asperiores quidem.
+          <div class="text-logo">
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus assumenda non ad, eveniet voluptas esse expedita enim
+              dolor amet in quidem magnam voluptatum debitis molestiae quos
+              minus fuga minima similique libero vero beatae asperiores natus
+              eligendi. Unde quasi, facilis ex velit vel ad libero asperiores
+              quidem.
+            </div>
+            <img src="assets/imgs/logo_pi.svg" alt="Logo do Projeto Integrador" class="logo-pi"/>
           </div>
-          <img src="assets/imgs/logo_pi.svg" alt="Logo do Projeto Integrador" class="logo-pi"/>
+          <div class="alinha-img-logo"></div>
         </div>
 
-        <div class="conteudo-tecnologias">
-
+        <div class="conteudo-tecnologias" id="tela-tecnologias">
           <div class="title">Tecnologias</div>
-          
+
           <div class="tecnologias-wrap">
-
             <div class="tecnologia">
-              <img src="assets/imgs/logo_java.svg" alt="Logo Java" class="image"/>
+              <img
+                src="assets/imgs/logo_java.svg"
+                alt="Logo Java"
+                class="image"
+              />
               <div class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum facere aut necessitatibus consectetur assumenda, esse quaerat reprehenderit sit expedita quisquam numquam illo aperiam saepe dolorem delectus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                facere aut necessitatibus consectetur assumenda, esse quaerat
+                reprehenderit sit expedita quisquam numquam illo aperiam saepe
+                dolorem delectus.
               </div>
             </div>
 
             <div class="tecnologia">
-              <img src="assets/imgs/logo_python.svg" alt="Logo Python" class="image"/>
+              <img
+                src="assets/imgs/logo_python.svg"
+                alt="Logo Python"
+                class="image"
+              />
               <div class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum facere aut necessitatibus consectetur assumenda, esse quaerat reprehenderit sit expedita quisquam numquam illo aperiam saepe dolorem delectus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                facere aut necessitatibus consectetur assumenda, esse quaerat
+                reprehenderit sit expedita quisquam numquam illo aperiam saepe
+                dolorem delectus.
               </div>
             </div>
 
             <div class="tecnologia">
-              <img src="assets/imgs/logo_opencv.svg" alt="Logo OpenCV" class="image"/>
+              <img
+                src="assets/imgs/logo_opencv.svg"
+                alt="Logo OpenCV"
+                class="image"
+              />
               <div class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum facere aut necessitatibus consectetur assumenda, esse quaerat reprehenderit sit expedita quisquam numquam illo aperiam saepe dolorem delectus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                facere aut necessitatibus consectetur assumenda, esse quaerat
+                reprehenderit sit expedita quisquam numquam illo aperiam saepe
+                dolorem delectus.
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
 
       <div class="footer">
-        <hr class="hr">
+        <hr class="hr" />
         <div class="text-icons">
           <div class="text">
-            © 2025 ByteMe. All rights reserved. <br> ByteMe@gmail.com
+            © 2025 ByteMe. All rights reserved. <br />
+            ByteMe@gmail.com
           </div>
 
           <div class="icons">
@@ -247,7 +287,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>

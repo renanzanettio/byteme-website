@@ -16,9 +16,12 @@
     overflow-x: hidden;
   }
 
+  * {
+    margin: 0;
+  }
+
   body {
-    /* padding-top: 60px; afastar a tela pra n sobrepor*/
-    background-color: var(--secundary_gray_700);
+    background-color: var(--secundary_gray_700) !important;
     font-family: "Montserrat", sans-serif !important;
   }
 
@@ -34,6 +37,9 @@
     z-index: 100;
     padding-inline: 10vw !important;
     white-space: nowrap;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .nav-logo-name {
@@ -109,9 +115,9 @@
         height: 105px;
         border: 6px solid var(--primary_blue_400);
         opacity: 0.1;
-        top: -50px;
+        top: -10px;
         transform: rotate(22deg);
-        left: 30%;
+        left: 20%;
         z-index: 1;
       }
 
@@ -138,6 +144,14 @@
         left: -80px;
         z-index: 1;
       }
+
+      & .square-4 {
+        display: none;
+      }
+
+      & .square-5 {
+        display: none;
+      }
     }
 
     & .conteudo {
@@ -148,16 +162,23 @@
       width: 80vw;
       color: var(--primary_blue_200);
 
-      & .title {
-        font-size: var(--section-title);
-        font-weight: 800;
-        text-align: center;
+      & .title-text {
+        & .title {
+          font-size: var(--section-title);
+          font-weight: 800;
+          text-align: center;
+        }
+
+        & .text {
+          font-size: 1rem;
+          text-align: justify;
+        }
       }
 
-      & .text {
-        font-size: 1rem;
-        text-align: justify;
+      & .logo{
+        display: none;
       }
+
     }
   }
 
@@ -199,216 +220,213 @@
         border-radius: 10px;
         overflow: hidden !important;
 
-        & .shapes{
+        & .shapes {
           display: absolute;
           width: 100%;
 
-
-          & .square-1-1{
+          & .square-1-1 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_400);
             bottom: 10px;
             left: 140px;
-          } 
+          }
 
-          & .square-1-2{
+          & .square-1-2 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_200);
             bottom: 10px;
             left: 160px;
-          } 
+          }
 
-          & .square-1-3{
+          & .square-1-3 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             bottom: 0px;
             left: 120px;
-          } 
+          }
 
-          & .square-1-4{
+          & .square-1-4 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_600);
             bottom: 0px;
             left: 130px;
-          } 
+          }
 
-          & .square-1-5{
+          & .square-1-5 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             bottom: 0px;
             left: 150px;
-          } 
+          }
 
-          & .square-1-6{
+          & .square-1-6 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_200);
             bottom: 0px;
             left: 160px;
-          } 
+          }
 
-          & .square-2-1{
+          & .square-2-1 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             top: 0px;
             left: 0px;
-          } 
+          }
 
-          & .square-2-2{
+          & .square-2-2 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_400);
             top: 0px;
             left: 20px;
-          } 
+          }
 
-          & .square-2-3{
+          & .square-2-3 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             top: 10px;
             left: 10px;
-          } 
+          }
 
-          & .square-2-4{
+          & .square-2-4 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_600);
             top: 20px;
             left: 0px;
-          } 
+          }
 
-          & .square-3-1{
+          & .square-3-1 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_200);
             top: 20px;
             left: 0px;
-          } 
+          }
 
-          & .square-3-2{
+          & .square-3-2 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_400);
             top: 30px;
             left: 10px;
-          } 
+          }
 
-          & .square-3-3{
+          & .square-3-3 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_600);
             top: 40px;
             left: 0px;
-          } 
+          }
 
-          & .square-3-4{
+          & .square-3-4 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             top: 50px;
             left: 0px;
-          } 
+          }
 
-          & .square-3-5{
+          & .square-3-5 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_200);
             top: 70px;
             right: 0px;
-          } 
+          }
 
-          & .square-3-6{
+          & .square-3-6 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             top: 80px;
             right: 0px;
-          } 
+          }
 
-          & .square-4-1{
+          & .square-4-1 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_600);
             top: 0px;
             right: 10px;
-          } 
+          }
 
-          & .square-4-2{
+          & .square-4-2 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_200);
             top: 0px;
             right: 0px;
-          } 
+          }
 
-          & .square-4-3{
+          & .square-4-3 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_600);
             top: 10px;
             right: 20px;
-          } 
+          }
 
-          & .square-4-4{
+          & .square-4-4 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_500);
             top: 20px;
             right: 10px;
-          } 
+          }
 
-          & .square-4-5{
+          & .square-4-5 {
             position: absolute;
             width: 10px;
             height: 10px;
             background-color: var(--primary_blue_200);
             top: 20px;
             right: 0px;
-          } 
-
+          }
         }
 
-        & .icon-name{
+        & .icon-name {
           display: flex;
           flex-direction: column;
           align-items: center;
 
-
           & .profile-icon {
-            width: 16vw; 
+            width: 16vw;
             height: 16vw;
             border: 1px solid var(--secundary_gray_700);
             background-size: cover;
             border-radius: 50%;
           }
-  
+
           & .name {
             font-size: 5.2vw;
             font-weight: 600;
@@ -424,7 +442,6 @@
           max-width: 60%;
           max-height: 80%;
           min-height: 50%;
-          
         }
 
         & .redes-sociais {
@@ -469,7 +486,7 @@
     }
   }
 
-  .tela-pi{
+  .tela-pi {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -477,7 +494,7 @@
     align-items: center;
     gap: 100px;
 
-    & .container-pi{
+    & .container-pi {
       width: 80vw;
       height: 500px;
       background-color: var(--primary_blue_300);
@@ -489,7 +506,7 @@
       color: var(--primary_blue_600);
       padding: 32px;
 
-      & .shapes{
+      & .shapes {
         position: absolute;
         z-index: 2;
         width: 80vw;
@@ -497,8 +514,7 @@
         margin-top: -32px;
         border: none;
 
-
-        & .square-1{
+        & .square-1 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -506,10 +522,9 @@
           bottom: 50px;
           right: 20px;
           border: none;
-
         }
 
-        & .square-2{
+        & .square-2 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -519,7 +534,7 @@
           border: none;
         }
 
-        & .square-3{
+        & .square-3 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -529,7 +544,7 @@
           border: none;
         }
 
-        & .square-4{
+        & .square-4 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -539,7 +554,7 @@
           border: none;
         }
 
-        & .square-5{
+        & .square-5 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -549,7 +564,7 @@
           border: none;
         }
 
-        & .square-6{
+        & .square-6 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -559,7 +574,7 @@
           border: none;
         }
 
-        & .square-7{
+        & .square-7 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -569,7 +584,7 @@
           border: none;
         }
 
-        & .square-8{
+        & .square-8 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -579,7 +594,7 @@
           border: none;
         }
 
-        & .square-9{
+        & .square-9 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -589,7 +604,7 @@
           border: none;
         }
 
-        & .square-10{
+        & .square-10 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -599,7 +614,7 @@
           border: none;
         }
 
-        & .square-11{
+        & .square-11 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -609,7 +624,7 @@
           border: none;
         }
 
-        & .square-12{
+        & .square-12 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -619,7 +634,7 @@
           border: none;
         }
 
-        & .square-13{
+        & .square-13 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -629,7 +644,7 @@
           border: none;
         }
 
-        & .square-14{
+        & .square-14 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -639,7 +654,7 @@
           border: none;
         }
 
-        & .square-15{
+        & .square-15 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -649,7 +664,7 @@
           border: none;
         }
 
-        & .square-16{
+        & .square-16 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -659,7 +674,7 @@
           border: none;
         }
 
-        & .square-17{
+        & .square-17 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -669,7 +684,7 @@
           border: none;
         }
 
-        & .square-18{
+        & .square-18 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -679,7 +694,7 @@
           border: none;
         }
 
-        & .square-19{
+        & .square-19 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -689,7 +704,7 @@
           border: none;
         }
 
-        & .square-20{
+        & .square-20 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -699,7 +714,7 @@
           border: none;
         }
 
-        & .square-21{
+        & .square-21 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -709,7 +724,7 @@
           border: none;
         }
 
-        & .square-22{
+        & .square-22 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -719,7 +734,7 @@
           border: none;
         }
 
-        & .square-23{
+        & .square-23 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -729,7 +744,7 @@
           border: none;
         }
 
-        & .square-24{
+        & .square-24 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -739,7 +754,7 @@
           border: none;
         }
 
-        & .square-25{
+        & .square-25 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -749,7 +764,7 @@
           border: none;
         }
 
-        & .square-26{
+        & .square-26 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -759,7 +774,7 @@
           border: none;
         }
 
-        & .square-27{
+        & .square-27 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -769,7 +784,7 @@
           border: none;
         }
 
-        & .square-27{
+        & .square-28 {
           position: absolute;
           width: 10px;
           height: 10px;
@@ -779,94 +794,95 @@
           border: none;
           border-bottom-right-radius: 10px;
         }
-
-
-        
-
       }
 
-      & .title{
+      & .title {
         position: relative;
         font-size: var(--section-title);
         text-align: center;
       }
 
-      & .text{
-        font-size: 1rem;
+      & .text-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        & .text {
+          font-size: 1rem;
+        }
+  
+        & .logo-pi {
+          width: 35vw;
+        }
       }
 
-      & .logo-pi{
-        width: 35vw;
-      }
 
     }
 
-    .conteudo-tecnologias{
+    .conteudo-tecnologias {
       display: flex;
       flex-direction: column;
       width: 80vw;
       align-items: center;
       gap: 20px;
 
-      & .title{
+      & .title {
         font-size: var(--section-title);
         font-weight: 800;
         color: var(--primary_blue_200);
       }
 
-      & .tecnologias-wrap{
+      & .tecnologias-wrap {
         display: flex;
         flex-direction: column;
         gap: 30px;
 
-        & .tecnologia{
+        & .tecnologia {
           display: flex;
           flex-direction: column;
           gap: 10px;
           align-items: center;
 
-          & .image{
+          & .image {
             width: 23vw;
             height: 23vw;
           }
 
-          & .text{
+          & .text {
             font-size: 1rem;
           }
         }
       }
     }
-
   }
 
-  .footer{
+  .footer {
     display: flex;
     flex-direction: column;
     height: 120px;
     width: 100vw;
     align-items: center;
 
-    & .hr{
+    & .hr {
       width: 90vw;
       color: var(--primary_blue_200);
       opacity: 1;
     }
 
-    & .text-icons{
+    & .text-icons {
       display: flex;
       width: 90vw;
       justify-content: space-between;
       align-items: center;
 
-      & .text{
+      & .text {
         font-size: 0.8rem;
       }
 
-      & .icons{
+      & .icons {
         display: flex;
         gap: 5px;
         align-items: center;
-
 
         & .mdi--github {
           display: inline-block;
@@ -897,8 +913,5 @@
         }
       }
     }
-
-
   }
-
 }
