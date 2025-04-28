@@ -37,7 +37,7 @@
     z-index: 100;
     padding-inline: 10vw !important;
     white-space: nowrap;
-    background-color: #fff;
+    background-color: var(--secundary_gray_700);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
